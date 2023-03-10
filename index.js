@@ -82,9 +82,10 @@ class FamilyMemberService {
         method: 'DELETE',
         headers: { "Content-Type": "application/json" },
       });
-      return await response.json();
+    return await response.json();
   }
-}
+
+} // end of FamilyMemberService class
 
 // Class that uses the FamilyMemberService to update the database
 // and then updates the DOM to reflect the changes.
@@ -200,7 +201,8 @@ class DOMManager {
     $("#id").val(id);
     myModal.show();
   }
-}
+
+} // end of DOMManager class
 
 // Display the data when the page is loaded.
 DOMManager.getAllFamilyMembers();
